@@ -23,6 +23,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <h1>Users Rolodex</h1>
         <SearchBox onChange={(value => this.setState({ searchField: value }))} />
         <CardList users={this.state.users} searchTerm={this.state.searchField} />
       </div>
